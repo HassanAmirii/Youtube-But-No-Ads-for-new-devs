@@ -79,10 +79,7 @@
 }
 
 .search-button,
-.voice-search-button,
-.apps-button,
-.notifications-button,
-.upload-button {
+.voice-search-button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -94,10 +91,7 @@
 }
 
 .search-button .tool-tip,
-.voice-search-button .tool-tip,
-.apps-button .tool-tip,
-.notifications-button .tool-tip,
-.upload-button .tool-tip {
+.voice-search-button .tool-tip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -116,10 +110,7 @@
 }
 
 .search-button:hover .tool-tip,
-.voice-search-button:hover .tool-tip,
-.apps-button:hover .tool-tip,
-.notifications-button:hover .tool-tip,
-.upload-button:hover .tool-tip {
+.voice-search-button:hover .tool-tip {
   opacity: 1;
 }
 .voice-search-button {
@@ -142,80 +133,29 @@
   justify-content: center;
   flex-shrink: 0;
 }
-.upload-button {
-  height: 35px;
-  width: 30px;
-  border: none;
-  border-radius: 2px;
-  background-color: white;
-}
 
-.upload-icon {
-  height: 23px;
-  margin-top: 4px;
-}
-
-.apps-button {
-  height: 35px;
-  width: 30px;
-  border: none;
-  border-radius: 2px;
-  background-color: white;
-  margin-left: 16px;
-}
-
-.apps-icon {
-  height: 23px;
-  margin-top: 4px;
-}
-
-.notifications-button {
-  height: 35px;
-  width: 30px;
-  border: none;
-  border-radius: 2px;
-  background-color: white;
-  margin-left: 16px;
-}
-
-.notifications-icon {
-  height: 23px;
-  margin-top: 4px;
-}
-
-.notifications-icon-container {
-  position: relative;
-}
-
-.notifications-count {
-  position: absolute;
-  background-color: rgb(200, 0, 0);
-  color: white;
-  top: -2px;
-  right: -5px;
+.developer {
+  font-size: 14px;
+  color: #606060;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 11px;
-  padding: 6px 6px; /* Adjusted padding for a more rounded look */
-  border-radius: 50px; /* Increased border-radius for a more circular shape */
-  height: 9px;
-  width: 10px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.developer:hover {
+  color: black;
+  text-decoration: underline;
 }
 
-.profile-button {
-  height: 35px;
-  width: 35px;
-  margin-left: 16px;
-  border: none;
-  background-color: white;
-  border-style: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.insights-button {
+  font-size: 14px;
+  color: #606060;
+  margin-left: -20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
 }
 
-.channel-profile-icon {
-  height: 30px;
-  width: 30px;
-  object-fit: fill;
-  border-radius: 50%;
-  margin-bottom: 7px;
+.insights-button:hover {
+  color: black;
+  text-decoration: underline;
 }
