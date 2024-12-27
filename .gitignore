@@ -1,0 +1,42 @@
+# Ignore all .a files
+*.a
+
+# Ignore all files in the bin directory
+bin/
+
+# Ignore all .txt files in the doc/ directory
+doc/*.txt
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore .env file
+.env
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Thumbs.db files on Windows
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore package-lock.json or yarn.lock (you can keep these if using npm or yarn for package management)
+package-lock.json
+yarn.lock
+
+# Ignore build output
+dist/
+build/
+
+# Ignore test coverage directory
+coverage/
+
+# Ignore any IDE-specific files
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.swp

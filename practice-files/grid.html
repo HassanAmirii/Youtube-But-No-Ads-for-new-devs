@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+</head>
+<body style="padding-bottom: 40px;">
+    <div style="display: grid; grid-template-columns: 50px 100px 1fr; width: 100px;">
+        <div style="background-color: red;">50px</div>
+        <div style="background-color: blue;">100px</div>
+        <div style="background-color: aqua;">free space</div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 2fr 2fr; width: 100px; margin-top: 10px;">
+        <div style="background-color: red;">1fr</div>
+        <div style="background-color: blue;">2fr</div>
+        <div style="background-color: aqua;">2fr</div>
+    </div>
+
+    <div>
+        <div 
+        style="display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 10px;
+        height: 300px;
+        column-gap: 10px;
+        row-gap: 10px;">
+            <div style="background-color: red;">1fr</div>
+            <div style="background-color: blue;">1fr</div>
+            <div style="background-color: aqua;">1fr</div>
+            <div style="background-color: red;">1fr</div>
+            <div style="background-color: blue;">1fr</div>
+            <div style="background-color: aqua;">1fr</div>
+        </div>
+    </div>
+</body>
+</html>
