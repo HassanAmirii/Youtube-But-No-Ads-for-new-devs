@@ -12,3 +12,13 @@ body {
   padding-right: 24px;
   padding-bottom: 2000px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(92, 10, 10);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}

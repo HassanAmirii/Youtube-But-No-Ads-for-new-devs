@@ -33,6 +33,13 @@
   width: 90px;
 }
 
+.noADs-comment {
+  font-size: 12px;
+  color: #606060;
+  margin-left: 10px;
+  font-weight: 800;
+}
+
 .middle-section {
   flex: 1;
   display: flex;
