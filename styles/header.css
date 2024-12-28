@@ -79,7 +79,7 @@
 }
 
 .search-button,
-.voice-search-button {
+.color-change-button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@
 }
 
 .search-button .tool-tip,
-.voice-search-button .tool-tip {
+.color-change-button .tool-tip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -110,19 +110,18 @@
 }
 
 .search-button:hover .tool-tip,
-.voice-search-button:hover .tool-tip {
+.color-change-button:hover .tool-tip {
   opacity: 1;
 }
-.voice-search-button {
+.color-change-button {
   height: 40px;
   width: 40px;
   border: none;
   border-radius: 50px 50px;
-  background-color: rgb(247, 247, 247);
   border-color: rgb(204, 204, 204);
 }
 
-.voice-search-icon {
+.color-change-icon {
   height: 20px;
 }
 .right-section {
@@ -141,6 +140,7 @@
   font-weight: 700;
   margin-left: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 .developer:hover {
   color: black;
