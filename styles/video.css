@@ -58,6 +58,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+@media (max-width: 320px) {
+  .the-all-video-container {
+    grid-template-columns: 1fr;
+  }
+  .search-bar {
+    display: none;
+  }
+}
 .profile-picture {
   width: 36px;
   border-radius: 50px;
