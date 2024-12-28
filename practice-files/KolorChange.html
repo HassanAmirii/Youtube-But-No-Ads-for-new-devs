@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background color chnage with js</title>
+  </head>
+  <style>
+    body {
+      background-color: white;
+    }
+  </style>
+
+  <body>
+    <button class="color-change">white/black</button>
+    <p style="color: aquamarine">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum aperiam,
+      recusandae impedit itaque magni, ipsa fugit laboriosam, omnis inventore
+      facilis odio esse at ea accusamus! Dolore dicta cupiditate sit id.
+    </p>
+
+    <p style="color: pink">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      doloribus magnam veniam veritatis expedita id non, maiores voluptates.
+      Quisquam nihil, cumque autem unde beatae dolor voluptate ad perspiciatis
+      reprehenderit necessitatibus.
+    </p>
+
+    <p class="thirdP" style="color: yellow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi hic
+      consequuntur animi voluptatum vel quaerat minima fuga iusto voluptate
+      culpa, omnis nulla repellendus. Natus enim tempore voluptates quaerat
+      incidunt.
+    </p>
+
+    <script>
+      const colorChangeButton = document.querySelector(".color-change");
+      const body = document.querySelector("body");
+      const changeParagraphColor = document.querySelector(".thirdP");
+
+      colorChangeButton.addEventListener("click", () => {
+        if (
+          body.style.backgroundColor === "white" ||
+          !body.style.backgroundColor
+        ) {
+          body.style.backgroundColor = "black";
+          changeParagraphColor.style.color = "white";
+        } else {
+          body.style.backgroundColor = "white";
+          changeParagraphColor.style.color = "black";
+        }
+      });
+    </script>
+  </body>
+</html>
