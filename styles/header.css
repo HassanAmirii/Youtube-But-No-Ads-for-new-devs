@@ -55,7 +55,8 @@
   border: solid 1px grey;
   padding-left: 15px;
   font-size: 16px;
-  border-radius: 2px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
 }
@@ -75,6 +76,8 @@
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .search-button,
