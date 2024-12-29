@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/underHead.css" />
     <script src="scripts/color-change.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,11 +25,13 @@
           src="icons/hamburger-menu.svg"
           alt="hamburger-menu"
         />
-        <img
-          class="youtube-logo"
-          src="icons/youtube-logo.svg"
-          alt="youtube-logo"
-        />
+        <a href="youtube.html">
+          <img
+            class="youtube-logo"
+            src="icons/youtube-logo.svg"
+            alt="youtube logo"
+          />
+        </a>
         <p class="noADs-comment">But No Ads + Roadmap Videos</p>
       </div>
       <div class="middle-section">
@@ -58,6 +61,7 @@
           >
         </p>
       </div>
+
       <nav class="sidebar">
         <div class="sidebar-item">
           <img class="home-icon" src="icons/home.svg" alt="home-icon" />
@@ -79,7 +83,7 @@
             src="icons/subscriptions.svg"
             alt="subscriptions-icon"
           />
-          <div>Data structures and algorithm</div>
+          <div>DSA</div>
         </div>
 
         <div class="sidebar-item">
@@ -97,29 +101,35 @@
             src="icons/youtube-music.svg"
             alt="youtube-music-icon"
           />
-          <div>Dev's Music</div>
-        </div>
-
-        <div class="sidebar-item">
-          <img
-            class="library-icon"
-            src="icons/library.svg"
-            alt="library-icon"
-          />
-          <div>Bookmark</div>
+          <div>Music</div>
         </div>
       </nav>
     </header>
-
+    <header>
+      <div class="subnav">
+        <a href="youtube.html" class="subnav-div">All</a>
+        <a href="html-files/intro.html" class="subnav-div">Introduction</a>
+        <a href="html-files/frontend.html" class="subnav-div">Front end</a>
+        <a href="html-files/backend.html" class="subnav-div">Back end</a>
+        <a href="html-files/fullstack.html" class="subnav-div">Full stack</a>
+        <a href="html-files/Mlai.html" class="subnav-div">Ml | AI</a>
+        <a href="html-files/uiux.html" class="subnav-div">Ui | Ux</a>
+        <a href="html-files/git.html" class="subnav-div">Git & Github</a>
+      </div>
+    </header>
     <main>
       <section class="the-all-video-container">
         <div class="video-preview">
           <div class="video-thumbnail-container">
-            <img
-              class="video-thumbnail"
-              src="channel thumbnails/thumbnail-1.webp"
-              alt="video-thumbnail"
-            />
+            <iframe
+              src="https://www.youtube.com/embed/1tELlYbO_U8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              width="300"
+              height="168"
+            >
+            </iframe>
             <div class="video-duration">14:20</div>
           </div>
           <div class="video-info-container">
