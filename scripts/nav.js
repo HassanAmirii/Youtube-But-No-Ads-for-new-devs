@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbarContainer = document.getElementById("navbar-container");
 
   // Fetch the navbar.html file
-  fetch("html-files/navbar.html")
+  fetch("nav/navbar.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to load navbar");
