@@ -10,9 +10,11 @@
   right: 0;
   background-color: white;
   z-index: 100;
+  padding-right: 14px;
 }
 
-.left-section {
+.left-section,
+.right-section {
   display: flex;
   align-items: center;
 }
@@ -138,16 +140,24 @@
 
 .developer {
   font-size: 14px;
-  color: #606060;
+  color: black;
   font-family: Roboto, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
 }
-.developer:hover {
-  color: black;
+.developer:hover,
+.howto-file:hover {
+  color: red;
   text-decoration: underline;
+}
+
+.howto-file {
+  color: black;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .insights-button {
@@ -162,4 +172,11 @@
 .insights-button:hover {
   color: black;
   text-decoration: underline;
+}
+
+.gear-icon,
+.ghost-icon {
+  width: 20px;
+  margin: 0%;
+  margin-left: 5px;
 }
