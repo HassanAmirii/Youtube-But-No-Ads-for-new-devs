@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/underHead.css" />
+    <script src="scripts/colorchange.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube-No Ads</title>
+  </head>
+
+  <style>
+    .overlayThumbnail {
+      width: 300px;
+      height: 168px;
+      position: absolute;
+      left: 0.1;
+      object-fit: cover;
+    }
+
+    iframe {
+      position: relative;
+    }
+  </style>
+  <body>
+    <!-- This is where the navbar will be inserted -->
+    <div id="navbar-container"></div>
+
+    <div class="video-preview">
+      <div class="video-thumbnail-container">
+        <iframe
+          class="YoutubeVideo"
+          src="https://www.youtube.com/embed/Dxcc6ycZ73M"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          width="300"
+          height="168"
+        >
+        </iframe>
+        <img
+          class="overlayThumbnail"
+          src="channel thumbnails/thumbnail-1.webp"
+          alt=""
+        />
+      </div>
+      <div class="video-info-container">
+        <div class="channel-picture">
+          <img
+            class="profile-picture"
+            src="channel profile pic/channel-1.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            talking tech and ai with google ceo sundar pichai!
+          </p>
+          <p class="channel-name">marques brownlee</p>
+          <p class="video-stats">3.4m views &centerdot; 6 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const playVideo = document.querySelector(".overlayThumbnail");
+      const YoutubeVideo = document.querySelector(".YoutubeVideo");
+      playVideo.addEventListener("click", () => {
+        playVideo.style.display = "none";
+        YoutubeVideo.style.display = "block";
+
+        const VideoSrc = YoutubeVideo.getAttribute("src");
+
+        if (!VideoSrc.includes("autoplay=1")) {
+          YoutubeVideo.setAttribute("src", `${VideoSrc}?autoplay=1`);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -13,6 +13,13 @@
   padding-right: 14px;
 }
 
+.youtube-logo {
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
 .left-section,
 .right-section {
   display: flex;
@@ -35,11 +42,13 @@
 }
 
 .noADs-comment {
-  font-size: 12px;
-  color: #606060;
-  margin-left: 10px;
+  top: 5;
+  font-size: 16px;
+  color: #2e2c2c;
+  margin-left: -25px;
   font-weight: 800;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .middle-section {
