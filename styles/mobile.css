@@ -1,0 +1,5 @@
+@media only screen and (max-width: 414px) {
+  .sidebar {
+    display: none; /* This will hide the sidebar on the iPhone 11 in portrait mode */
+  }
+}
