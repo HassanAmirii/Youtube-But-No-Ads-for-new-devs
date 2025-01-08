@@ -139,7 +139,7 @@
   height: 20px;
 }
 .right-section {
-  width: 180px;
+  width: 200px;
   margin-right: 20px;
   display: flex;
   align-items: center;
@@ -147,35 +147,21 @@
   flex-shrink: 0;
 }
 
-.developer {
-  font-size: 14px;
-  color: black;
-  font-family: Roboto, Arial, sans-serif;
-  font-weight: 500;
-  margin-left: 10px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.developer:hover,
-.howto-file:hover {
-  color: red;
-  text-decoration: underline;
-}
-
-.howto-file {
-  color: black;
-  font-family: Roboto, Arial, sans-serif;
-  font-weight: 500;
-  text-decoration: none;
+.right-section-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .insights-button {
+  margin-right: 10px;
   font-size: 14px;
-  color: #606060;
-  margin-left: -20px;
+  color: white;
   font-weight: 700;
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
+  border: none;
 }
 
 .insights-button:hover {
@@ -183,9 +169,15 @@
   text-decoration: underline;
 }
 
+.insights-button a {
+  text-decoration: none;
+}
+
 .gear-icon,
 .ghost-icon {
-  width: 20px;
+  display: flex;
+  align-items: center;
+  width: 15px;
   margin: 0%;
   margin-left: 5px;
 }
