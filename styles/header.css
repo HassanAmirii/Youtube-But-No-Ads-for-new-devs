@@ -171,13 +171,14 @@
 
 .insights-button a {
   text-decoration: none;
+  color: black;
 }
 
 .gear-icon,
 .ghost-icon {
   display: flex;
   align-items: center;
-  width: 15px;
+  width: 18px;
   margin: 0%;
   margin-left: 5px;
 }
