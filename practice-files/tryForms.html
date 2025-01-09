@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Options</title>
+  </head>
+  <body style="background-color: black; color: aquamarine">
+    <form action="/submit_form" method="post">
+      <!-- Question 1: Project Type -->
+      <label>1. What type of projects are you most interested in?</label><br />
+      <input
+        type="radio"
+        name="project_type"
+        id="web_dev"
+        value="Web Development"
+      />
+      <label for="web_dev">Web Development</label><br />
+      <input
+        type="radio"
+        name="project_type"
+        id="mobile_dev"
+        value="Mobile Development"
+      />
+      <label for="mobile_dev">Mobile Development</label><br />
+      <input
+        type="radio"
+        name="project_type"
+        id="data_science"
+        value="Data Science"
+      />
+      <label for="data_science">Data Science</label><br />
+      <br />
+
+      <!-- Question 2: Learning Preference -->
+      <label>2. How would you describe your learning preference?</label><br />
+      <input
+        type="radio"
+        name="learning_preference"
+        id="easy_to_start"
+        value="beginner_friendly"
+      />
+      <label for="easy_to_start">
+        I prefer a language that is easy to understand and quick to start with </label
+      ><br />
+      <input
+        type="radio"
+        name="learning_preference"
+        id="steeper_curve"
+        value="steeper_learning"
+      />
+      <label for="steeper_curve">
+        I’m okay with a steeper learning curve if it’s necessary for large,
+        robust applications </label
+      ><br />
+      <input
+        type="radio"
+        name="learning_preference"
+        id="structured_env"
+        value="enterprise_support"
+      />
+      <label for="structured_env">
+        I enjoy a structured, well-defined programming environment with lots of
+        enterprise support </label
+      ><br />
+      <br />
+
+      <!-- Question 3: Speed and Performance -->
+      <label>3. How important is speed and performance to you?</label><br />
+      <input
+        type="radio"
+        name="performance"
+        id="high_speed"
+        value="high_performance"
+      />
+      <label for="high_speed"
+        >Very important, I want the application to run as fast as
+        possible</label
+      ><br />
+      <input
+        type="radio"
+        name="performance"
+        id="balanced_performance"
+        value="balanced_performance"
+      />
+      <label for="balanced_performance"
+        >It's important, but I can balance performance with other factors</label
+      ><br />
+      <input
+        type="radio"
+        name="performance"
+        id="low_speed"
+        value="low_performance"
+      />
+      <label for="low_speed"
+        >Not a priority, I'm more focused on ease of use</label
+      ><br />
+      <br />
+
+      <!-- Question 4: Scalability -->
+      <label>4. How do you feel about scaling your projects?</label><br />
+      <input
+        type="radio"
+        name="scalability"
+        id="easy_scaling"
+        value="easy_scaling"
+      />
+      <label for="easy_scaling"
+        >I want to be able to easily scale my projects when needed</label
+      ><br />
+      <input
+        type="radio"
+        name="scalability"
+        id="moderate_scaling"
+        value="moderate_scaling"
+      />
+      <label for="moderate_scaling"
+        >I want scalability, but it doesn’t need to be super easy</label
+      ><br />
+      <input
+        type="radio"
+        name="scalability"
+        id="complex_scaling"
+        value="complex_scaling"
+      />
+      <label for="complex_scaling"
+        >I’m okay with a more complex solution for scaling</label
+      ><br />
+      <br />
+
+      <!-- Question 5: Community Support -->
+      <label>5. How important is community support to you?</label><br />
+      <input
+        type="radio"
+        name="community_support"
+        id="large_community"
+        value="large_community"
+      />
+      <label for="large_community"
+        >I prefer a language with a large community and lots of resources</label
+      ><br />
+      <input
+        type="radio"
+        name="community_support"
+        id="medium_community"
+        value="medium_community"
+      />
+      <label for="medium_community"
+        >I’m fine with a medium-sized community with decent support</label
+      ><br />
+      <input
+        type="radio"
+        name="community_support"
+        id="small_community"
+        value="small_community"
+      />
+      <label for="small_community"
+        >I’m okay with a smaller, more specialized community</label
+      ><br />
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
