@@ -13,17 +13,44 @@
   padding-right: 14px;
 }
 
-.youtube-logo {
+.terminal-logo {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
 }
 
+.terminal-logo {
+  height: 30px;
+  width: 120px;
+}
+
+.brand-text {
+  margin-left: -37px;
+}
+
+.left-section-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 24px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
 .left-section,
 .right-section {
   display: flex;
   align-items: center;
+}
+
+.left-section a {
+  text-decoration: none;
+  margin-left: -20px;
 }
 .hamburger-menu {
   height: 24px;
@@ -35,20 +62,6 @@
 [title="menu"] {
   bottom: 0;
   right: 8px;
-}
-.youtube-logo {
-  height: 30px;
-  width: 90px;
-}
-
-.noADs-comment {
-  top: 5;
-  font-size: 16px;
-  color: #2e2c2c;
-  margin-left: -25px;
-  font-weight: 800;
-  cursor: pointer;
-  flex-shrink: 0;
 }
 
 .middle-section {

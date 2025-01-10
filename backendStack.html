@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/underHead.css" />
     <link rel="stylesheet" href="styles/Autoplay.css" />
     <script src="scripts/Autoplay.js" defer></script>
     <script src="scripts/colorchange.js" defer></script>
@@ -21,7 +20,7 @@
   </head>
   <style>
     body {
-      background-color: black;
+      background-color: white;
       padding: 300px;
       padding-bottom: 90px;
       padding-top: 100px;
@@ -29,7 +28,7 @@
     .whole-container {
       font-family: Roboto, Arial, sans-serif;
       width: 200px;
-      background-color: rgb(5, 9, 39);
+      background-color: black;
       color: black;
       padding: 15px;
       font-size: 14px;
@@ -39,8 +38,7 @@
     }
 
     .whole-container:hover {
-      background-color: rgb(19, 17, 17);
-      box-shadow: 0 0 10px 0.5px rgb(19, 17, 17);
+      box-shadow: 0 0 30px 1px rgb(116, 233, 136);
     }
     .tech-img {
       width: 200px;
@@ -75,69 +73,85 @@
     }
 
     h1 {
-      color: white;
+      color: black;
       text-align: center;
       font-family: Roboto, Arial, sans-serif;
     }
+    .subnav a {
+      display: none;
+    }
+
+    .the-whole-shit a {
+      text-decoration: none;
+    }
   </style>
   <body>
+    <div id="navbar-container"></div>
+
     <h1>pick a backend language of your choice !</h1>
     <div class="the-whole-shit">
-      <div class="whole-container">
-        <div class="tech-img-container">
-          <img class="tech-img" src="logos/python.png" alt="python-logo" />
-        </div>
+      <a href="python.html">
+        <div class="whole-container">
+          <div class="tech-img-container">
+            <img class="tech-img" src="logos/python.png" alt="python-logo" />
+          </div>
 
-        <div class="tech-info">
-          <p class="tech-name">python</p>
-          <p class="tech-about">
-            Python is a beginner-friendly, versatile programming language used
-            in web development, data science, AI, automation, and more. It’s
-            known for its simple syntax, making it easy to learn.
-          </p>
-          <hr />
-          <p class="tech-level">beginner</p>
+          <div class="tech-info">
+            <p class="tech-name">python</p>
+            <p class="tech-about">
+              Python is a beginner-friendly, versatile programming language used
+              in web development, data science, AI, automation, and more. It’s
+              known for its simple syntax, making it easy to learn.
+            </p>
+            <hr />
+            <p class="tech-level">beginner</p>
+          </div>
         </div>
-      </div>
-      <div class="whole-container">
-        <div class="tech-img-container">
-          <img
-            class="tech-img"
-            src="logos/javascript-736400_1280.png"
-            alt="javascript-logo"
-          />
-        </div>
+      </a>
 
-        <div>
-          <p class="tech-name">javascript</p>
-          <p class="tech-about">
-            JavaScript (JS) is a versatile and widely-used programming language,
-            primarily for adding interactivity to websites. It’s a great
-            language for beginners because it’s easy to start with and has a lot
-            of practical applications.
-          </p>
-          <hr />
-          <p class="tech-level">intermidiate</p>
-        </div>
-      </div>
+      <a href="#">
+        <div class="whole-container">
+          <div class="tech-img-container">
+            <img
+              class="tech-img"
+              src="logos/javascript-736400_1280.png"
+              alt="javascript-logo"
+            />
+          </div>
 
-      <div class="whole-container">
-        <div class="tech-img-container">
-          <img class="tech-img" src="logos/j.png" alt="javascript-logo" />
+          <div>
+            <p class="tech-name">javascript</p>
+            <p class="tech-about">
+              JavaScript (JS) is a versatile and widely-used programming
+              language, primarily for adding interactivity to websites. It’s a
+              great language for beginners because it’s easy to start with and
+              has a lot of practical applications.
+            </p>
+            <hr />
+            <p class="tech-level">intermidiate</p>
+          </div>
         </div>
+      </a>
 
-        <div>
-          <p class="tech-name">java</p>
-          <p class="tech-about">
-            Java is a powerful, versatile programming language used for building
-            applications like websites, mobile apps, and games. It’s
-            beginner-friendly with a clear structure and helps you learn
-            object-oriented programming, a key concept in modern development.
-          </p>
-          <hr />
-          <p class="tech-level">advance</p>
+      <a href="#">
+        <div class="whole-container">
+          <div class="tech-img-container">
+            <img class="tech-img" src="logos/j.png" alt="javascript-logo" />
+          </div>
+
+          <div>
+            <p class="tech-name">java</p>
+            <p class="tech-about">
+              Java is a powerful, versatile programming language used for
+              building applications like websites, mobile apps, and games. It’s
+              beginner-friendly with a clear structure and helps you learn
+              object-oriented programming, a key concept in modern development.
+            </p>
+            <hr />
+            <p class="tech-level">advance</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </body>
 </html>
